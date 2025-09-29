@@ -1,0 +1,209 @@
+[0m18:50:37.289923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dec9a8c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dec8bafed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dec8baf9d0>]}
+
+
+============================== 18:50:37.295333 | d29dc9f3-2ad2-4aab-8cf2-f8dda4f050f9 ==============================
+[0m18:50:37.295333 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:50:37.295857 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt init', 'empty': 'None', 'log_cache_events': 'False', 'version_check': 'True', 'log_path': 'logs', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'introspect': 'True', 'partial_parse': 'True', 'target_path': 'None', 'debug': 'False', 'printer_width': '80', 'profiles_dir': '/home/kisaraf/.dbt', 'static_parser': 'True', 'write_json': 'True', 'warn_error': 'None', 'quiet': 'False'}
+[0m18:50:41.382627 [debug] [MainThread]: Starter project path: /home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/include/starter_project
+[0m18:50:41.394150 [info ] [MainThread]: 
+Your new dbt project "dbt_dbx" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:50:41.394562 [info ] [MainThread]: Setting up your profile.
+[0m18:50:46.303958 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m18:50:46.304441 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m18:50:46.304694 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m18:56:59.198437 [info ] [MainThread]: Profile dbt_dbx written to /home/kisaraf/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:56:59.201745 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 381.959, "process_in_blocks": "286640", "process_kernel_time": 0.429895, "process_mem_max_rss": "228788", "process_out_blocks": "88", "process_user_time": 2.904805}
+[0m18:56:59.202558 [debug] [MainThread]: Command `dbt init` succeeded at 18:56:59.202459 after 381.96 seconds
+[0m18:56:59.202910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dec6e60050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dea3952570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dea3a5ae00>]}
+[0m18:56:59.203265 [debug] [MainThread]: Flushing usage events
+[0m18:56:59.873746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:02:25.185053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807cd3b0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807cc4d3ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807cc4d39d0>]}
+
+
+============================== 19:02:25.190121 | 92627740-4366-49ee-b05d-a7ce1fa96f79 ==============================
+[0m19:02:25.190121 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:02:25.190643 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'empty': 'None', 'printer_width': '80', 'fail_fast': 'False', 'warn_error': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/kisaraf/.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'write_json': 'True', 'quiet': 'False', 'introspect': 'True', 'no_print': 'None', 'cache_selected_only': 'False'}
+[0m19:02:25.222607 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:02:25.222984 [info ] [MainThread]: python version: 3.13.7
+[0m19:02:25.223265 [info ] [MainThread]: python path: /home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/bin/python
+[0m19:02:25.223528 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.42
+[0m19:02:26.079378 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m19:02:26.079742 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m19:02:26.079972 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m19:02:26.930251 [info ] [MainThread]: Using profiles dir at /home/kisaraf/.dbt
+[0m19:02:26.930775 [info ] [MainThread]: Using profiles.yml file at /home/kisaraf/.dbt/profiles.yml
+[0m19:02:26.931092 [info ] [MainThread]: Using dbt_project.yml file at /home/kisaraf/sandbox_dev/dbt_on_databricks/dbt_project.yml
+[0m19:02:26.931411 [info ] [MainThread]: adapter type: databricks
+[0m19:02:26.931719 [info ] [MainThread]: adapter version: 1.10.9
+[0m19:02:26.932012 [info ] [MainThread]: Configuration:
+[0m19:02:26.932304 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:02:26.932574 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:02:26.932841 [info ] [MainThread]: Required dependencies:
+[0m19:02:26.933123 [debug] [MainThread]: Executing "git --help"
+[0m19:02:26.935514 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:02:26.935902 [debug] [MainThread]: STDERR: "b''"
+[0m19:02:26.936240 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:02:26.936534 [info ] [MainThread]: Connection:
+[0m19:02:26.936851 [info ] [MainThread]:   host: adb-2381312836840869.9.azuredatabricks.net
+[0m19:02:26.937144 [info ] [MainThread]:   http_path: sql/protocolv1/o/2381312836840869/0926-075655-mfor5uhu
+[0m19:02:26.937478 [info ] [MainThread]:   catalog: dbt_project_catalog
+[0m19:02:26.937768 [info ] [MainThread]:   schema: dbt_kisara
+[0m19:02:26.938189 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m19:02:27.048040 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m19:02:27.048472 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m19:02:27.048787 [debug] [MainThread]: Using databricks connection "debug"
+[0m19:02:27.049054 [debug] [MainThread]: On debug: select 1 as id
+[0m19:02:27.049290 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:02:34.727484 [error] [MainThread]: Encountered an error:
+
+[0m19:02:34.753339 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/cli/main.py", line 420, in debug
+    results = task.run()
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/task/debug.py", line 144, in run
+    connection_status = self.test_connection()
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/task/debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/task/debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/spark/impl.py", line 519, in debug_query
+    self.execute("select 1 as id")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/databricks/impl.py", line 329, in execute
+    return super().execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt_common/record.py", line 512, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/base/impl.py", line 438, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/databricks/connections.py", line 297, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/databricks/connections.py", line 270, in add_query
+    handle: DatabricksHandle = connection.handle
+                               ^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/databricks/connections.py", line 424, in open
+    return cls.retry_connection(
+           ~~~~~~~~~~~~~~~~~~~~^
+        connection,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        retry_timeout=(timeout if timeout is not None else exponential_backoff),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ~~~~~~~^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/databricks/connections.py", line 404, in connect
+    conn = DatabricksHandle.from_connection_args(
+        conn_args, creds.cluster_id is not None
+    )
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/dbt/adapters/databricks/handle.py", line 211, in from_connection_args
+    conn = dbsql.connect(**conn_args)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/__init__.py", line 90, in connect
+    return Connection(server_hostname, http_path, access_token, **kwargs)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/client.py", line 274, in __init__
+    self.session.open()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/session.py", line 132, in open
+    self._session_id = self.backend.open_session(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session_configuration=self.session_configuration,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        catalog=self.catalog,
+        ^^^^^^^^^^^^^^^^^^^^^
+        schema=self.schema,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/backend/thrift_backend.py", line 601, in open_session
+    response = self.make_request(self._client.OpenSession, open_session_req)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/backend/thrift_backend.py", line 512, in make_request
+    response_or_error_info = attempt_request(attempt)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/backend/thrift_backend.py", line 417, in attempt_request
+    response = method(request)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 204, in OpenSession
+    self.send_OpenSession(req)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 213, in send_OpenSession
+    self._oprot.trans.flush()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/auth/thrift_http_client.py", line 193, in flush
+    self.__resp = self.__pool.request(
+                  ~~~~~~~~~~~~~~~~~~~^
+        "POST",
+        ^^^^^^^
+    ...<5 lines>...
+        retries=self.retry_policy,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/urllib3/connectionpool.py", line 940, in urlopen
+    retries.sleep(response)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/urllib3/util/retry.py", line 359, in sleep
+    slept = self.sleep_for_retry(response)
+  File "/home/kisaraf/sandbox_dev/dbt_on_databricks/.venv/lib64/python3.13/site-packages/databricks/sql/auth/retry.py", line 300, in sleep_for_retry
+    time.sleep(proposed_wait)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m19:02:34.754758 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 9.617418, "process_in_blocks": "121200", "process_kernel_time": 0.400165, "process_mem_max_rss": "235828", "process_out_blocks": "112", "process_user_time": 3.153305}
+[0m19:02:34.755181 [debug] [MainThread]: Command `dbt debug` failed at 19:02:34.755099 after 9.62 seconds
+[0m19:02:34.755484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807a742f820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807a7230950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807a7114490>]}
+[0m19:02:34.755780 [debug] [MainThread]: Flushing usage events
+[0m19:02:35.349068 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:39.985461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736e9f1b0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736e9e2dbed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736e9e2db9d0>]}
+
+
+============================== 19:27:39.992266 | f0446fa3-1f24-47c2-a561-43e5539150ac ==============================
+[0m19:27:39.992266 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:27:39.992973 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'invocation_command': 'dbt run', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'partial_parse': 'True', 'write_json': 'True', 'quiet': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'printer_width': '80', 'debug': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/home/kisaraf/.dbt', 'use_colors': 'True'}
+[0m19:27:39.993474 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/kisaraf/sandbox_dev/dbt_on_databricks/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:27:39.995634 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07508839, "process_in_blocks": "88064", "process_kernel_time": 0.192871, "process_mem_max_rss": "99808", "process_out_blocks": "8", "process_user_time": 1.32075}
+[0m19:27:39.996321 [debug] [MainThread]: Command `dbt run` failed at 19:27:39.996163 after 0.08 seconds
+[0m19:27:39.996916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736e9e3c3820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736e9e150170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736e9e361bf0>]}
+[0m19:27:39.997483 [debug] [MainThread]: Flushing usage events
+[0m19:27:40.655435 [debug] [MainThread]: An error was encountered while trying to flush usage events

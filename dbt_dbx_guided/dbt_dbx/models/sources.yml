@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: landing_s
+    database: dbt_project_catalog  
+    schema: landing  
+    tables:
+      - name: orders
+        # freshness:
+        #   warn_after:
+        #     count: 365
+        #     period: day
+        #   error_after:
+        #     count: 1460
+        #     period: day
+        # loaded_at_field: created_at
+      - name: users
+      - name: products
+      - name: reviews
