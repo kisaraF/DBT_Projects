@@ -1,0 +1,11 @@
+dbt_dbx:
+  outputs:
+    dev:
+      catalog: dbt_project_catalog
+      host: adb-2381312836840869.9.azuredatabricks.net
+      http_path: sql/protocolv1/o/2381312836840869/0926-075655-mfor5uhu
+      schema: dbt_kisara
+      threads: 2
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+  target: dev
