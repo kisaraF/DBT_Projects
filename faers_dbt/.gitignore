@@ -12,3 +12,4 @@ faers_source.duckdb
 Data/
 logs/
 wip.md
+.ruff_cache/

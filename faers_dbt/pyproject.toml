@@ -10,4 +10,5 @@ dependencies = [
     "duckdb>=1.4.1",
     "logging>=0.4.9.6",
     "polars>=1.35.1",
+    "ruff>=0.14.4",
 ]
