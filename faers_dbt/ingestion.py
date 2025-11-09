@@ -93,7 +93,10 @@ def write_to_tables(data_dict: dict) -> None:
         logging.debug(f"Processig {file}")
 
         df = pl.read_csv(
-            data_dict[file], separator="$", has_header=True, infer_schema_length=0 #infer_schema_length to make every data point string to skip conversion issues
+            data_dict[file],
+            separator="$",
+            has_header=True,
+            infer_schema_length=0,  # infer_schema_length to make every data point string to skip conversion issues
         )
         logging.debug(f"{file} in polars data frame, has {len(df)} rows")
 
