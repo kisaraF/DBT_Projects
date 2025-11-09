@@ -11,4 +11,5 @@ dependencies = [
     "logging>=0.4.9.6",
     "polars>=1.35.1",
     "ruff>=0.14.4",
+    "sqlfluff>=3.5.0",
 ]
