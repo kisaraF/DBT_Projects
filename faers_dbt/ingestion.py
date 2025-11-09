@@ -8,7 +8,7 @@ from zipfile import ZipFile
 
 
 def init_logger() -> None:
-    log_date = datetime.now().strftime("%Y%m%d")
+    log_date = datetime.now().strftime("%Y%m%d%H%M%S")
     log_fp = f"{os.getcwd()}/logs/log_ingestion_{log_date}.log"
     logging.basicConfig(
         level=logging.DEBUG,
@@ -19,14 +19,8 @@ def init_logger() -> None:
     logging.info("Ingestion log file initiated")
 
 
-def get_current_year() -> int:
-    curr_year = datetime.now().date().year
-    logging.info(f"Current Year : {curr_year}")
-    return curr_year
-
-
-def get_files(year_i: int) -> list:
-    data_path = f"{os.getcwd()}/Data/faers_{year_i}"
+def get_files() -> list:
+    data_path = f"{os.getcwd()}/Data/faers"
     all_files = [f"{data_path}/{i}" for i in os.listdir(data_path)]
     logging.info(f"Found {len(all_files)} untracked files for ingestion @ {data_path}")
     return all_files
@@ -53,7 +47,7 @@ def process_file(file: str) -> dict:
 
 def init_db() -> None:
     conn = duckdb.connect("faers_source.duckdb")
-    logging.info("Conection to DuckDB initialized")
+    logging.debug("Conection to DuckDB initialized")
     return conn
 
 
@@ -88,7 +82,6 @@ def write_to_tables(data_dict: dict) -> None:
     schema_name = "SOURCE_FAERS"
     create_schema = f"""CREATE SCHEMA IF NOT EXISTS {schema_name};"""
     con.execute(create_schema)
-    logging.info(f"Schema {schema_name} created")
 
     # List tables
     tables_ls = (
@@ -100,14 +93,17 @@ def write_to_tables(data_dict: dict) -> None:
         logging.debug(f"Processig {file}")
 
         df = pl.read_csv(
-            data_dict[file], separator="$", has_header=True, infer_schema_length=0
+            data_dict[file],
+            separator="$",
+            has_header=True,
+            infer_schema_length=0,  # infer_schema_length to make every data point string to skip conversion issues
         )
         logging.debug(f"{file} in polars data frame, has {len(df)} rows")
 
         file_hash_cols_str = get_hash_cols(file)
 
         if file not in tables_ls:
-            logging.debug(
+            logging.info(
                 f"The table {file} is not available. Hence creating a new one..."
             )
 
@@ -157,9 +153,7 @@ def move_after_writing(file_name: str) -> None:
 if __name__ == "__main__":
     init_logger()
 
-    curr_year = get_current_year()
-
-    all_files = get_files(curr_year)
+    all_files = get_files()
 
     for batch in all_files:
         logging.info(f"Processing batch -> {batch}")

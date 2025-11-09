@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+- name: faers_source
+  schema: SOURCE_FAERS
+  tables:
+    - name: DEMO
+      identifier: SRC_DEMO
+      loaded_at_field: _created_at
+      freshness:
+        warn_after: {
+          count: 90,
+          period: day
+        }
+        error_after: {
+          count: 100,
+          period: day
+        }
+    - name: DRUG
+      identifier: SRC_DRUG
+      loaded_at_field: _created_at
+      freshness:
+        warn_after: {
+          count: 90,
+          period: day
+        }
+        error_after: {
+          count: 100,
+          period: day
+        }
+    - name: REAC
+      identifier: SRC_REAC
+      loaded_at_field: _created_at
+      freshness:
+        warn_after: {
+          count: 90,
+          period: day
+        }
+        error_after: {
+          count: 100,
+          period: day
+        }
+    - name: OUTC
+      identifier: SRC_OUTC
+      loaded_at_field: _created_at
+      freshness:
+        warn_after: {
+          count: 90,
+          period: day
+        }
+        error_after: {
+          count: 100,
+          period: day
+        }
