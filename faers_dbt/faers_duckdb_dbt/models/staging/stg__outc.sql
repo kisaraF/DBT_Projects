@@ -4,7 +4,7 @@ with src_outc as (
 )
 
 select
-    cast(primaryid as integer) as primaryid,
-    cast(caseid as integer) as caseid,
+    cast(primaryid as bigint) as primaryid,
+    cast(caseid as bigint) as caseid,
     outc_cod
 from src_outc

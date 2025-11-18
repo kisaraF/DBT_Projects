@@ -4,22 +4,23 @@ with src_drug as (
 )
 
 select
-    cast(primaryid as integer) as primaryid,
-    cast(caseid as integer) as caseid,
+    cast(primaryid as bigint) as primaryid,
+    cast(caseid as bigint) as caseid,
     cast(drug_seq as integer) as drug_seq,
     drugname,
-    prod_ai,
     val_vbm,
-    route,
-    dose_vbm,
-    cum_dose_unit,
-    dechal,
-    rechal,
-    lot_num,
-    exp_dt,
-    cast(nda_num as integer) as nda_num,
-    cast(dose_amt as integer) as dose_amt,
-    dose_unit,
-    dose_form,
-    dose_freq
+    coalesce(prod_ai, 'n/a') as prod_ai,
+    coalesce(route, 'Unknown') as route,
+    coalesce(dose_vbm, 'UNK') as dose_vbm,
+    coalesce(cum_dose_unit, 'n/a') as cum_dose_unit,
+    coalesce(dechal, 'n/a') as dechal,
+    coalesce(rechal, 'n/a') as rechal,
+    coalesce(lot_num, 'n/a') as lot_num,
+    coalesce(cast(strptime(exp_dt, '%Y%m%d') as date), date '9999-12-31')
+        as exp_dt,
+    coalesce(nda_num, '-1') as nda_num,
+    coalesce(cast(dose_amt as integer), -1) as dose_amt,
+    coalesce(dose_unit, 'n/a') as dose_unit,
+    coalesce(dose_form, 'n/a') as dose_form,
+    coalesce(dose_freq, 'n/a') as dose_freq
 from src_drug
