@@ -1,0 +1,1064 @@
+{
+    "animal": {
+        "age": {
+            "min": "4.00",
+            "qualifier": "Measured",
+            "unit": "Year"
+        },
+        "breed": {
+            "breed_component": [
+                "Terrier (unspecified)",
+                "Poodle (unspecified)"
+            ],
+            "is_crossbred": "true"
+        },
+        "female_animal_physiological_status": "NOT APPLICABLE",
+        "gender": "Female",
+        "reproductive_status": "Neutered",
+        "species": "Dog",
+        "weight": {
+            "min": "8.200",
+            "qualifier": "Measured",
+            "unit": "Kilogram"
+        }
+    },
+    "drug": [
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Amoxicillin Trihydrate;Clavulanate Potassium ( K-Clavulanate)"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "QJ01CR02",
+            "brand_name": "MSK",
+            "dosage_form": "Tablet",
+            "first_exposure_date": "20221022",
+            "last_exposure_date": "20221022",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK",
+                "registration_number": "USA-USFDACVM-N055099"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Maropitant Citrate"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "QA04AD90",
+            "brand_name": "MSK",
+            "dosage_form": "Tablet",
+            "first_exposure_date": "20221022",
+            "last_exposure_date": "20221022",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK",
+                "registration_number": "USA-USFDACVM-N141262"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Canine Interleukin-31 Monoclonal Antibody"
+                }
+            ],
+            "administered_by": "Veterinarian",
+            "atc_vet_code": "QD11AH91",
+            "brand_name": "MSK",
+            "dosage_form": "Injection",
+            "dose": {
+                "denominator": "1",
+                "denominator_unit": "Animal",
+                "numerator": "1",
+                "numerator_unit": "dose"
+            },
+            "first_exposure_date": "20221012",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Other"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Dexmedetomidine"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "UNKNOWN",
+            "brand_name": "MSK",
+            "dosage_form": "Injection, solution",
+            "first_exposure_date": "20221110",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown",
+            "used_according_to_label": "true"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Bacitracin + Neomycin + Polymyxin B"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "UNKNOWN",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221021",
+            "last_exposure_date": "20221021",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Fluid Therapy (Unknown)"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "QL04AD01",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221021",
+            "last_exposure_date": "20221021",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Metronidazole"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221022",
+            "last_exposure_date": "20221029",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Gabapentin"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "UNKNOWN",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221103",
+            "last_exposure_date": "20221103",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "S-Adenosylmethionine + Silybin"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "first_exposure_date": "20221103",
+            "frequency_of_administration": {
+                "unit": "Day",
+                "value": "1"
+            },
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Lidocaine"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221110",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Pentoxifylline"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221110",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Injectable Baytril + Injectable Dexamethasone + Meconazole"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Injection, solution",
+            "first_exposure_date": "20221118",
+            "last_exposure_date": "20230130",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Chlorhexidine"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221118",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Phytosphingosine"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "first_exposure_date": "20221118",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Sarolaner"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20230227",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Vitamins"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20230227",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Hydrolyzed Protein Diet"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "first_exposure_date": "20230523",
+            "last_exposure_date": "20230613",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Chlorhexidine Digluconate + Miconazole"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Liquid",
+            "first_exposure_date": "20230613",
+            "last_exposure_date": "20230907",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Topical"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Oclacitinib Maleate"
+                }
+            ],
+            "administered_by": "Unknown",
+            "brand_name": "MSK",
+            "dosage_form": "Unassigned",
+            "first_exposure_date": "20221012",
+            "last_exposure_date": "20230404",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Cefovecin Sodium"
+                }
+            ],
+            "administered_by": "Unknown",
+            "atc_vet_code": "UNKNOWN",
+            "brand_name": "MSK",
+            "dosage_form": "Injection, solution",
+            "first_exposure_date": "20221021",
+            "last_exposure_date": "20221021",
+            "lot_number": "UNKNOWN",
+            "manufacturer": {
+                "name": "MSK"
+            },
+            "route": "Unknown"
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Lidocaine"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Pentoxifylline"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Injectable Baytril + Injectable Dexamethasone + Meconazole"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Chlorhexidine"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Phytosphingosine"
+                }
+            ],
+            "atc_vet_code": "UNKNOWN",
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Sarolaner"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Vitamins"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Hydrolyzed Protein Diet"
+                }
+            ],
+            "atc_vet_code": "UNKNOWN",
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Chlorhexidine Digluconate + Miconazole"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Oclacitinib Maleate"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        },
+        {
+            "active_ingredients": [
+                {
+                    "dose": {
+                        "denominator": "1",
+                        "denominator_unit": "Unknown",
+                        "numerator": "1",
+                        "numerator_unit": "Unknown"
+                    },
+                    "name": "Cefovecin Sodium"
+                }
+            ],
+            "brand_name": "MSK",
+            "manufacturer": {
+                "name": "MSK"
+            }
+        }
+    ],
+    "duration": {
+        "unit": "Month",
+        "value": "7"
+    },
+    "health_assessment_prior_to_exposure": {
+        "assessed_by": "Veterinarian",
+        "condition": "Unknown"
+    },
+    "number_of_animals_affected": "1",
+    "number_of_animals_treated": "1",
+    "onset_date": "20221220",
+    "original_receive_date": "20231012",
+    "outcome": [
+        {
+            "medical_status": "Outcome Unknown",
+            "number_of_animals_affected": "1"
+        }
+    ],
+    "primary_reporter": "Other",
+    "reaction": [
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "900",
+            "veddra_term_name": "Alopecia local",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1985",
+            "veddra_term_name": "Pinnae disorder",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2423",
+            "veddra_term_name": "Platelet disorder NOS",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2055",
+            "veddra_term_name": "Elevated serum alkaline phosphatase (ALP)",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1756",
+            "veddra_term_name": "Skin disorders NOS",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1189",
+            "veddra_term_name": "Crust",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2521",
+            "veddra_term_name": "Polycythaemia",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2694",
+            "veddra_term_name": "Low pancreatic enzymes",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2420",
+            "veddra_term_name": "Monocytosis",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1196",
+            "veddra_term_name": "Scale",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2213",
+            "veddra_term_name": "Increased percentage reticulocytes",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2050",
+            "veddra_term_name": "Elevated alanine aminotransferase (ALT)",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2219",
+            "veddra_term_name": "Basophilia",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "163",
+            "veddra_term_name": "Leucocytosis NOS",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2238",
+            "veddra_term_name": "Elevated gamma-glutamyl transferase (GGT)",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "168",
+            "veddra_term_name": "Neutrophilia",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "115",
+            "veddra_term_name": "Anxiety",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1530",
+            "veddra_term_name": "Increased appetite",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "718",
+            "veddra_term_name": "Polyuria",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "123",
+            "veddra_term_name": "Inappropriate defecation",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "415",
+            "veddra_term_name": "Corneal ulcer",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "334",
+            "veddra_term_name": "Vomiting",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2178",
+            "veddra_term_name": "Reverse sneezing",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "304",
+            "veddra_term_name": "Loose stool",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1018",
+            "veddra_term_name": "Lethargy (see also Central nervous system depression in Neurological)",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1997",
+            "veddra_term_name": "Licking",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "913",
+            "veddra_term_name": "Hyperpigmentation",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "948",
+            "veddra_term_name": "Erythema (for urticaria see Immune SOC)",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2588",
+            "veddra_term_name": "Abnormal cytology",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "112",
+            "veddra_term_name": "Biting -aggression (see also Skin and appendages disorders)",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1192",
+            "veddra_term_name": "Pododermatitis",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1043",
+            "veddra_term_name": "Weight loss",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "166",
+            "veddra_term_name": "Lymphopenia",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "302",
+            "veddra_term_name": "Diarrhoea",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "360",
+            "veddra_term_name": "Pinnal reddening",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "116",
+            "veddra_term_name": "Behavioural disorder NOS",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "896",
+            "veddra_term_name": "Hyperkeratosis",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1307",
+            "veddra_term_name": "Allergy NOS",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "998",
+            "veddra_term_name": "Decreased appetite",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "958",
+            "veddra_term_name": "Itching",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2860",
+            "veddra_term_name": "Monocytopenia",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2212",
+            "veddra_term_name": "Decreased percentage of reticulocytes",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "167",
+            "veddra_term_name": "Neutropenia",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "915",
+            "veddra_term_name": "Hypopigmentation",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "164",
+            "veddra_term_name": "Leucopenia NOS",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "960",
+            "veddra_term_name": "Pruritus",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "1027",
+            "veddra_term_name": "Malaise",
+            "veddra_version": "18"
+        },
+        {
+            "accuracy": "Actual",
+            "number_of_animals_affected": "1",
+            "veddra_term_code": "2232",
+            "veddra_term_name": "Elevated amylase",
+            "veddra_version": "18"
+        }
+    ],
+    "receiver": {
+        "city": "Rockville",
+        "country": "USA",
+        "organization": "Food and Drug Administration Center for Veterinary Medicine",
+        "postal_code": "20855",
+        "state": "MD",
+        "street_address": "7500 Standish Place (HFV-210) Room N403"
+    },
+    "report_id": "N055099",
+    "secondary_reporter": "Veterinarian",
+    "serious_ae": "false",
+    "treated_for_ae": "true",
+    "type_of_information": "Safety Issue",
+    "unique_aer_id_number": "USA-USFDACVM-2023-US-064435"
+}

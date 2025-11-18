@@ -12,3 +12,4 @@ fda_animals_raw.duckdb
 logs/
 sample.ipynb
 .ruff_cache/
+*.parquet
