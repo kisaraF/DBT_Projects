@@ -1,6 +1,8 @@
 with base as (
     select
         _hash_id,
+        raw_payload:report_id::string as report_id,
+        raw_payload:unique_aer_id_number::string as unique_aer_id_number,
         raw_payload:animal.age.min::double as age,
         raw_payload:animal.age.unit::string as age_unit,
         raw_payload:animal.species::string as species,
@@ -18,6 +20,8 @@ with base as (
 
 select
     _hash_id,
+    report_id,
+    unique_aer_id_number,
     coalesce(age, -1) as age,
     coalesce(age_unit, 'n/a') as age_unit,
     coalesce(species, 'n/a') as species,

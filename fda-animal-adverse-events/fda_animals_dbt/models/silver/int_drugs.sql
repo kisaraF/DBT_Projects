@@ -1,6 +1,8 @@
 WITH base AS (
     SELECT
         _hash_id,
+        try_variant_get(raw_payload, '$.report_id')::string AS report_id,
+        raw_payload:unique_aer_id_number::string AS unique_aer_id_number,
         get_json_object(raw_payload::string, '$.drug') AS drug_json
     FROM {{ ref('stg_fda_raw_payload') }}
 )
@@ -8,6 +10,8 @@ WITH base AS (
 parsed AS (
     SELECT
         _hash_id,
+        report_id,
+        unique_aer_id_number,
         from_json(
             drug_json,
             'array<struct<
@@ -34,36 +38,66 @@ parsed AS (
     FROM base
 )
 ,
-final AS (
+processed_parse AS (
     SELECT
         parsed._hash_id,
-        coalesce(d.col.brand_name, 'n/a') AS brand_name,
-        coalesce(d.col.route, 'n/a') AS route,
-        coalesce(d.col.administered_by, 'n/a') AS administered_by,
-        coalesce(d.col.off_label_use, 'n/a') AS off_label_use,
-        coalesce(d.col.used_according_to_label, 'n/a')
-            AS used_according_to_label,
+        parsed.report_id,
+        parsed.unique_aer_id_number,
+        d.col.brand_name,
+        d.col.route,
+        d.col.administered_by,
+        d.col.off_label_use,
+        d.col.used_according_to_label,
+        d.col.first_exposure_date,
+        d.col.last_exposure_date,
+        d.col.dosage_form,
+        d.col.manufacturer.name AS manufacturer_name,
+        d.col.manufacturer.registration_number AS manufacturer_registration,
+        d.col.dose.numerator / d.col.dose.denominator AS dose,
+        d.col.dose.numerator_unit
+        || '/'
+        || d.col.dose.denominator_unit AS dose_unit
+    FROM parsed
+        LATERAL VIEW explode(drug_arr) d
+)
+,
+final AS (
+    SELECT
+        _hash_id,
+        report_id,
+        unique_aer_id_number,
+        coalesce(brand_name, 'n/a') AS brand_name,
+        coalesce(route, 'n/a') AS route,
+        coalesce(administered_by, 'n/a') AS administered_by,
+        coalesce(off_label_use, 'n/a') AS off_label_use,
+        coalesce(used_according_to_label, 'n/a') AS used_according_to_label,
         coalesce(
-            try_to_date(d.col.first_exposure_date, 'yyyyMMdd'),
+            try_to_date(first_exposure_date, 'yyyyMMdd'),
             to_date('9999-12-31')
         ) AS first_exposure_date,
         coalesce(
-            try_to_date(d.col.last_exposure_date, 'yyyyMMdd'),
+            try_to_date(last_exposure_date, 'yyyyMMdd'),
             to_date('9999-12-31')
         ) AS last_exposure_date,
-        coalesce(d.col.dosage_form, 'n/a') AS dosage_form,
-        coalesce(d.col.manufacturer.name, 'n/a') AS manufacturer_name,
-        coalesce(d.col.manufacturer.registration_number, 'n/a')
-            AS manufacturer_registration,
-        coalesce(round(d.col.dose.numerator / d.col.dose.denominator, 2), -1)
-            AS dose,
-        coalesce(
-            d.col.dose.numerator_unit
-            || '/'
-            || d.col.dose.denominator_unit, 'n/a'
-        ) AS dose_unit
-    FROM parsed
-        LATERAL VIEW explode(drug_arr) d
+        coalesce(dosage_form, 'n/a') AS dosage_form,
+        coalesce(manufacturer_name, 'n/a') AS manufacturer_name,
+        coalesce(manufacturer_registration, 'n/a') AS manufacturer_registration,
+        coalesce(round(dose, 2), -1) AS dose,
+        coalesce(dose_unit, 'n/a') AS dose_unit
+    FROM processed_parse
+    QUALIFY row_number() OVER (
+        PARTITION BY
+            _hash_id ORDER BY
+            brand_name NULLS LAST, route NULLS LAST, off_label_use NULLS LAST,
+            used_according_to_label NULLS LAST,
+            first_exposure_date NULLS LAST,
+            last_exposure_date NULLS LAST,
+            dosage_form NULLS LAST,
+            manufacturer_name NULLS LAST,
+            manufacturer_registration NULLS LAST,
+            dose NULLS LAST,
+            dose_unit NULLS LAST
+    ) = 1
 )
 
 SELECT *
