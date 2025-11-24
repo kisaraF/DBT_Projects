@@ -1,0 +1,32 @@
+[0m20:29:05.510474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba0ece62e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba0d1907c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba0d190ca0>]}
+
+
+============================== 20:29:05.551272 | 1849e25a-7a3b-405f-9b67-7beb2ff6e77b ==============================
+[0m20:29:05.551272 [info ] [MainThread]: Running with dbt=1.8.7
+[0m20:29:05.552504 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kisaraf/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:29:22.884592 [debug] [MainThread]: Starter project path: /home/kisaraf/Work/DBT_Projects/airbnb_guided_project/.venv/lib/python3.8/site-packages/dbt/include/starter_project
+[0m20:29:22.902647 [info ] [MainThread]: 
+Your new dbt project "airbnb_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:29:22.905130 [info ] [MainThread]: Setting up your profile.
+[0m20:29:26.551731 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:29:26.552901 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:29:26.553987 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m20:30:40.294652 [info ] [MainThread]: Profile airbnb_dbt written to /home/kisaraf/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:30:40.298379 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 94.91027, "process_user_time": 10.116429, "process_kernel_time": 1.502138, "process_mem_max_rss": "294272", "process_in_blocks": "142152", "process_out_blocks": "62400"}
+[0m20:30:40.301328 [debug] [MainThread]: Command `dbt init` succeeded at 20:30:40.300721 after 94.91 seconds
+[0m20:30:40.303785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba0ece62e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba0d23b700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba0d0be850>]}
+[0m20:30:40.306235 [debug] [MainThread]: Flushing usage events

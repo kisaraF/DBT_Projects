@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+- name: airbnb_source
+  schema: src
+  tables:
+    - name: hosts
+      identifier: src_hosts
+      loaded_at_field: updated_at
+      freshness: 
+        warn_after: {
+        count: 20,
+        period: day
+      }
+    - name: reviews
+      identifier: src_reviews
+      loaded_at_field: date
+      freshness: 
+        warn_after: {
+        count: 20,
+        period: day
+      }
+    - name: listings
+      identifier: src_listings
+      loaded_at_field: updated_at
+      freshness: 
+        warn_after: {
+        count: 20,
+        period: day
+      }
