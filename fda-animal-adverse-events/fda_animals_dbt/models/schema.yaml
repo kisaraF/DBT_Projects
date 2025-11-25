@@ -1,0 +1,45 @@
+# To find tests available for a given model -> dbt ls --resource-type test --select <model_name>
+# Run only a specific test retrieved from above -> dbt test --select <test_name>
+# To run all tests for a given model -> dbt test --select <model_name>
+
+models:
+  - name: dim_adverse_case
+    columns:
+      - name: report_id
+        tests:
+          - not_null
+      - name: unique_aer_id_number
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_animals
+    columns:
+      - name: animal_id
+        tests:
+          - unique
+    tests:
+      - not_null_all_columns()
+
+  - name: dim_drug
+    columns:
+      - name: drug_id
+        tests:
+          - unique
+
+  - name: dim_outcomes
+    tests:
+      - not_null
+      - unique
+  
+  - name: dim_reactions
+    columns:
+      - name: reaction_id
+        tests:
+          - unique
+
+  - name: dim_reciever
+    columns:
+      - name: reciever_id
+        tests:
+          - unique

@@ -4,7 +4,7 @@ sources:
 - name: fda_animals_raw
   schema: raw
   tables:
-    - name: raw_payload
+    - name: raw_payload    # dbt test --select source:fda_animals_raw.raw_payload
       identifier: raw_payload
       loaded_at_field: _created_at
       freshness:
@@ -16,3 +16,8 @@ sources:
           count: 100,
           period: day
         }
+      columns:
+        - name: _hash_id
+          tests:
+            - unique
+            - not_null
